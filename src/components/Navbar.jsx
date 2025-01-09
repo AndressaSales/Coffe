@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { HiMenuAlt1, HiMenuAlt3, HiMenuAlt4 } from 'react-icons/hi'
-
+import { IoIosMenu } from "react-icons/io";
 const Navbar = () => {
     
     const Menu = [
@@ -19,7 +18,7 @@ const Navbar = () => {
     ]
 
   return (
-    <div className='abosute top-0 left-0 w-full pt-10 text-[#fff] z-20 '>
+    <div className='abosute top-0 left-0 w-full pt-10 text-[#fff] z-20 bg-dark'>
         <div className='container'>
             <div className='flex justify-between items-center'>
                 <a href="#" className='text-2xl font-semibold'>
@@ -27,7 +26,7 @@ const Navbar = () => {
                 </a>
                 
                 <div>
-                    <HiMenuAlt4 className='text-3xl cursor-pointer' />
+                    <IoIosMenu className='text-3xl cursor-pointer' />
                 </div>
             </div>
         </div>
