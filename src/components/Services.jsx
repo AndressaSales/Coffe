@@ -1,7 +1,7 @@
 import React from 'react'
-import cappuccino from "../assets/cappuccino.png"
-import coffe from "../assets/coffe.png"
-import coffeIce from "../assets/coffeIce.png"
+import cappuccino from "../assets/coffee1.png"
+import coffe from "../assets/coffee3.png"
+import coffeIce from "../assets/coffee1.png"
 
 const Services = () => {
 
@@ -29,22 +29,21 @@ const Services = () => {
   return (
     <>
       <span id='services'></span>
-        <div className='py-10 bg-light'>
-            <div className='container'>
+        <div className=''>
+            <div className='container my-16 space-y-4'>
                 <div className='text-center mb-20'>
-                    <h1 className='text-4xl font-bold font-cursive text-gray-800'>O Melhor Café Para Você</h1>
+                    <h1 className='text-4xl font-bold font-cursive text-gray-800'>O Melhor <span className='text-primary'>Café </span> Para Você</h1>
+                    <p className='pt-3 font-semibold text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam aperiam, corrupti tenetur asperiores, animi ea fuga sequi eos amet dolor, optio illo incidunt mollitia nostrum dolorem soluta alias vitae.</p>
                 </div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8' style={{opacity: 1}}>
                     {services.map((service) => {
                         return(
-                            <div className='rounded-2xl relative shadow-xl duration-high group max-w-[300px]'>
-                                <div className='h-[122px]'>
-                                    <img src={service.url} alt="" className='max-w-[200px] group-hover:rolate-6 duration-300' />
-                                </div>
-                                <div className='p-4 text-center'>
-                                    <div className='w-full'></div>
-                                    <h1 className='text-xl font-bold'>{service.name}</h1>
-                                    <p className='text-gray-500 group-hover:text-[#fff] duration-high text-sm line-clamp-2'>{service.despription}</p>
+                            <div className='text-center p-4 space-y-6' style={{opacity: 1, transform: 'none'}}>
+                               
+                                <img src={service.url} alt="" className='max-w-[200px] mx-auto hover:scale-110 duration-300 cursor-pointer img-shadow' />
+                                <div className='space-y-2'>
+                                    <h1 className='text-2xl text-primary font-bold'>{service.name}</h1>
+                                    <p className='text-darkGray'>{service.despription}</p>
                                 </div>
                             </div>
                         )
