@@ -5,6 +5,7 @@ import Services from './components/Services'
 import Banner from './components/Banner'
 import Features from './components/Features'
 import Tea from './components/Tea'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Banner/>
       <Features />
       <Tea />
+      <Footer />
     </div>
   )
 }
